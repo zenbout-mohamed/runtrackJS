@@ -1,0 +1,20 @@
+/* style.css */
+
+body {
+    min-height: 4096px; /* Taille minimale du corps de la page */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Prend toute la largeur de la fenêtre */
+    height: 50px; /* Hauteur du footer */
+    background-color: #ccc; /* Couleur de base du footer */
+}
+
+/* Animation pour la couleur du footer en fonction du pourcentage de scrolling */
+@keyframes changeColor {
+    from { background-color: #ccc; } /* Couleur de départ */
+    to { background-color: #007bff; } /* Couleur finale */
+}
