@@ -1,0 +1,27 @@
+#taquin {
+    width: 300px; /* Si chaque pièce fait 100px et qu'il y en a 3 par ligne */
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.taquin-piece {
+    width: 100px; /* Dimensions d'une pièce */
+    height: 100px;
+    cursor: pointer;
+    background-size: cover;
+}
+
+#message {
+    text-align: center;
+    font-size: 24px;
+    color: green;
+}
+
+#restartButton {
+    display: none;
+    margin: auto;
+    padding: 10px 20px;
+    cursor: pointer;
+}
