@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet"  href="style.css">
+    <title>Liste des Utilisateurs</title>
+    
+</head>
+<body>
+    <button id="mise_a_jour_button">Mettre à jour</button>
+    <!-- Cette balise définit un tableau. C'est l'élément conteneur pour tous les autres éléments de tableau (lignes, cellules, etc.).
+     Elle représente le début et la fin du tableau. -->
+    <table>
+        <!-- La balise <thead> est utilisée pour grouper l'ensemble des lignes d'en-tête dans un tableau.
+         Les lignes insérées dans cette section sont conçues pour contenir les titres des colonnes.  -->
+        <thead>
+            <!-- <tr> signifie "table row" (ligne de tableau). Cette balise est utilisée pour définir une ligne dans le tableau.
+            Vous pouvez placer cette balise à l'intérieur de <thead>, <tbody>, ou <tfoot> pour créer des lignes d'en-tête, de corps,
+            ou de pied de page, respectivement. -->
+            <tr>
+                <!-- /<th> signifie "table header" (en-tête de tableau). Il est utilisé pour définir une cellule d'en-tête dans le tableau.
+                Les textes à l'intérieur de <th> sont généralement mis en gras et centrés par défaut.
+                Ces cellules sont utilisées pour indiquer le contenu des différentes colonnes du tableau. -->
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+
+        <!-- <tbody> est utilisé pour grouper le corps du tableau. Il contient toutes les lignes (<tr>) qui définissent le contenu réel du tableau,
+        c'est-à-dire les données. -->
+        <tbody id="userTableBody">
+            <!-- Les utilisateurs seront ajoutés ici -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
